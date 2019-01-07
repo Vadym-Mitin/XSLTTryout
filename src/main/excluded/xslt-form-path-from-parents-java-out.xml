@@ -1,0 +1,30 @@
+<form>
+    <fields>
+        <field name="CATALOG.BOOK.AUTHOR" value="Gambardella, Matthew"/>
+        <field name="CATALOG.BOOK.TITLE" value="XML Developer's Guide"/>
+        <field name="CATALOG.BOOK.GENRE" value="Computer"/>
+        <field name="CATALOG.BOOK.PRICE" value="44.95"/>
+        <field name="CATALOG.BOOK.PUBLISH_DATE" value="2000-10-01"/>
+        <field name="CATALOG.BOOK.DESCRIPTION" value="An in-depth look at creating applications with
+            XML.
+        "/>
+        <field name="CATALOG.BOOK.AUTHOR" value="Ralls, Kim"/>
+        <field name="CATALOG.BOOK.TITLE" value="Midnight Rain"/>
+        <field name="CATALOG.BOOK.GENRE" value="Fantasy"/>
+        <field name="CATALOG.BOOK.PRICE" value="5.95"/>
+        <field name="CATALOG.BOOK.PUBLISH_DATE" value="2000-12-16"/>
+        <field name="CATALOG.BOOK.DESCRIPTION" value="A former architect battles corporate zombies,
+            an evil sorceress, and her own childhood to become queen of the
+            world.
+        "/>
+        <field name="CATALOG.BOOK.AUTHOR" value="Corets, Eva"/>
+        <field name="CATALOG.BOOK.TITLE" value="Maeve Ascendant"/>
+        <field name="CATALOG.BOOK.GENRE" value="Fantasy"/>
+        <field name="CATALOG.BOOK.PRICE" value="5.95"/>
+        <field name="CATALOG.BOOK.PUBLISH_DATE" value="2000-11-17"/>
+        <field name="CATALOG.BOOK.DESCRIPTION" value="After the collapse of a nanotechnology society
+            in England, the young survivors lay the foundation for a new
+            society.
+        "/>
+    </fields>
+</form>

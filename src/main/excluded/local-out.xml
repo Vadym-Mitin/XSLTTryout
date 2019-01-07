@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element xmlns:b="http://www.b.com" xmlns:a="http://www.a.com" name="a:a" namespace-uri="http://www.a.com"
+         local-name="a">
+    <element name="b:b" namespace-uri="http://www.b.com" local-name="b">
+        <element name="c" namespace-uri="" local-name="c">
+            <element name="b:b" namespace-uri="http://www.b.com" local-name="b">
+                <element name="a:a" namespace-uri="http://www.a.com" local-name="a">
+                    <element name="c" namespace-uri="" local-name="c"/>
+                </element>
+            </element>
+        </element>
+    </element>
+</element>

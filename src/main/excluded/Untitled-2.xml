@@ -1,0 +1,60 @@
+<XML ID="XSLHeader">
+    <xsl:stylesheet version="1.0"
+                    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                    xmlns:js="javascript:code"
+                    xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+                    xmlns:ms="urn:schemas-microsoft-com:xslt"
+                    xmlns:fo="http://www.w3.org/1999/XSL/Format">
+
+        <msxsl:script language="javascript" implements-prefix="js">
+            function factorial(n)
+            {
+            if (n == '1')
+            { return ( 1 ) }
+            else
+            { return ( n * factorial(n - 1) ) }
+            }
+        </msxsl:script>
+
+        <xsl:param name="sexo"/>
+        <xsl:param name="categ"/>
+        <xsl:param name="anio"/>
+
+        <xsl:template match="portfolio">
+
+            <head>
+            </head>
+            <table border="2" width="100%" height="6">
+                <tr>
+                    <td class="bg">
+                        <H1>
+                            <xsl:value-of select="description"/> del
+                            <xsl:value-of select="$anio"/> -
+                            <xsl:value-of select="$categ"/> Años,
+                            <xsl:choose>
+                                <xsl:when test="$sexo='V'">Varones</xsl:when>
+                                <xsl:otherwise>Damas</xsl:otherwise>
+                            </xsl:choose>
+
+                        </H1>
+                        <H3>Actualizado el
+                            <xsl:apply-templates select="date"/>
+                        </H3>
+                        <H3>Factorial
+                            <xsl:value-of select="js:factorial(6)"/>
+                        </H3>
+                        <P>Presione sobre los encabezados para ordenarpor dicho campo.</P>
+                    </td>
+                </tr>
+            </table>
+        </xsl:template>
+
+        <xsl:template match="date">
+            <xsl:value-of select="ms:format-date(., 'd',SP_ar)"/> de
+            <xsl:value-of select="ms:format-date(.,'MMMMM, yyyy', SP_ar)"/>
+            a las
+            <xsl:value-of select="ms:format-time(.,'hh:mm tt')"/>
+        </xsl:template>
+
+    </xsl:stylesheet>
+</XML>
