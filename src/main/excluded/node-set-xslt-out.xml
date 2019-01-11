@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+    <author>
+        <firstname>Jirka</firstname>
+        <surname>Kosek</surname>
+        <email>jirka@kosek.cz</email>
+    </author>
+    <from_src>
+        <email>jirka@kosek.cz</email>
+    </from_src>
+</element>
