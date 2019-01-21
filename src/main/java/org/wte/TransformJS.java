@@ -9,9 +9,10 @@ import static org.wte.Transformator.doTransform;
  */
 public class TransformJS {
     public static void main(String[] args) throws TransformerException {
-        String xsl = "E:\\javaProjects\\XSLTTryout\\src\\main\\excluded\\local.xsl";
-        String src = "E:\\javaProjects\\XSLTTryout\\src\\main\\excluded\\local.xml";
-        String out = "E:\\javaProjects\\XSLTTryout\\src\\main\\excluded\\local-out.xml";
+        String surcePath = "E:\\javaProjects\\XSLTTryout\\src\\main\\excluded\\";
+        String src = surcePath + "ALLSFunctTest_in.xml";
+        String xsl = surcePath + "ALLSFunctTest.xsl";
+        String out = surcePath + "ALLSFunctTest_out.xml";
 
         doTransform(xsl, src, out);
     }

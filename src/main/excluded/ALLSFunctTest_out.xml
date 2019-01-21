@@ -1,0 +1,9 @@
+/elemA[1]='one'
+        /elemA[2]='two'
+        /elemA[2][@attribute1='first']
+        /elemA[2][@attribute2='second']
+        /elemB[1]/elemF[1]='three'
+        /elemB[1]/elemA[1]='three1'
+        /elemB[1]/elemD[1]='three2'
+        /elemA[3]='four'
+        /elemC[1]/elemB[1]='five'
